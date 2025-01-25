@@ -6,13 +6,13 @@ const EstiloGlobal = createGlobalStyle`
     padding: 0;
     font-family: 'Inter', sans-serif;
     list-style: none;
-    
+
   }
 
   body {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color:  wheat;
+    background-color:  #0a3d62;
 
     @media (max-width: 768px) {
       padding-top: 16px;
@@ -27,11 +27,20 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 128px auto;
+  grid-template-columns: 150px auto;
   column-gap: 56px;
 
   @media (max-width: 768px) {
     max-width: 80%;
     display: block;
+  }
+
+  a {
+    color: aliceblue;
+    text-decoration: none;
+
+    :hover {
+      color: #5f27cd;
+    }
   }
 `
