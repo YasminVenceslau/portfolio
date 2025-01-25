@@ -1,9 +1,13 @@
-import Paragrafo from '../../components/Paragrafo'
-import Titulo from '../../components/Titulo'
-import Avatar from '../Avatar'
+import React from 'react'
 import { BotaoTema, Descricao, Lado, SidebarContainer } from './styles'
+import Avatar from '../Avatar'
+import Titulo from '../../components/Titulo'
 
-const Sidebar = () => (
+type Props = {
+  trocaTema: () => void
+}
+
+const Sidebar: React.FC<Props> = (props) => (
   <Lado>
     <SidebarContainer>
       <Avatar />
@@ -20,7 +24,7 @@ const Sidebar = () => (
       <Descricao tipo="principal" fontSize={12}>
         Engenheira Full Stack
       </Descricao>
-      <BotaoTema>Trocar Tema</BotaoTema>
+      <BotaoTema onClick={props.trocaTema}>Trocar Tema</BotaoTema>
     </SidebarContainer>
   </Lado>
 )
