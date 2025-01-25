@@ -63,5 +63,8 @@ export const Container = styled.div`
       outline: none;
       box-shadow: 0 0 0 3px ${(props) => props.theme.corFoco};
     }
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 `
