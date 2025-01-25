@@ -24,7 +24,7 @@ const Sidebar: React.FC<Props> = (props) => (
       <Descricao tipo="principal" fontSize={12}>
         Engenheira Full Stack
       </Descricao>
-      <BotaoTema onClick={props.trocaTema}>Trocar Tema</BotaoTema>
+      <button onClick={props.trocaTema}>Trocar Tema</button>
     </SidebarContainer>
   </Lado>
 )
